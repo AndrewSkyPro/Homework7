@@ -39,7 +39,7 @@ console.log(minNumber);
 //Задание 5
 
 const randomInt = (min, max) => {
-    let rand = 1 + Math.random() * (max - min);
+    let rand = Math.random() * (max - min) + min;
     return Math.round(rand);
 }
 
@@ -57,7 +57,7 @@ const getRandomArrNumbers = (numb) => {
 }
 console.log(getRandomArrNumbers(8));
 
-//Задания 7
+//Задание 7
 
 const twoNumbers = (a, b) =>
 Math.round(Math.random() * (a - b) + b);
